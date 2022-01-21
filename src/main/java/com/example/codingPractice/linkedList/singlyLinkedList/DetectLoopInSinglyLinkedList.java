@@ -1,7 +1,6 @@
-package com.example.demo.linkedList.singlyLinkedList;
+package com.example.codingPractice.linkedList.singlyLinkedList;
 
 import java.util.HashSet;
-import java.util.List;
 
 public class DetectLoopInSinglyLinkedList {
     ListNode head;

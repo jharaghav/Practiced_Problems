@@ -1,4 +1,4 @@
-package com.example.demo.arrayProblem;
+package com.example.codingPractice.arrayProblem;
 
 //Given three arrays sorted in increasing order. Find the elements that are common in all three arrays.
 

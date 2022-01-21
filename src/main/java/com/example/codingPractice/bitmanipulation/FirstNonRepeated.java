@@ -1,4 +1,4 @@
-package com.example.demo.bitmanipulation;
+package com.example.codingPractice.bitmanipulation;
 
 public class FirstNonRepeated {
 

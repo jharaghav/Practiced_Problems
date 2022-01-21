@@ -1,7 +1,4 @@
-package com.example.demo.arrayProblem;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.example.codingPractice.arrayProblem;
 
 public class Solution {
     public static void main(String... str)

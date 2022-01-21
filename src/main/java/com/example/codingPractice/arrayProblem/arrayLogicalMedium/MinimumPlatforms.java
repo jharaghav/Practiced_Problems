@@ -1,4 +1,4 @@
-package com.example.demo.arrayProblem.arrayLogicalMedium;
+package com.example.codingPractice.arrayProblem.arrayLogicalMedium;
 
 import java.util.Arrays;
 

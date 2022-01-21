@@ -1,4 +1,4 @@
-package com.example.demo.linkedList.singlyLinkedList;
+package com.example.codingPractice.linkedList.singlyLinkedList;
 
 public class SinglyLinkedList {
 

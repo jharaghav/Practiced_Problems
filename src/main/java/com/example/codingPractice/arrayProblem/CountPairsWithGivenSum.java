@@ -1,4 +1,4 @@
-package com.example.demo.arrayProblem;
+package com.example.codingPractice.arrayProblem;
 
 import java.util.ArrayList;
 import java.util.HashMap;

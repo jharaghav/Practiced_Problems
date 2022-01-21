@@ -1,4 +1,4 @@
-package com.example.demo.arrayProblem;
+package com.example.codingPractice.arrayProblem;
 //Sliding window problem
 import java.util.ArrayList;
 //        N = 5, S = 12

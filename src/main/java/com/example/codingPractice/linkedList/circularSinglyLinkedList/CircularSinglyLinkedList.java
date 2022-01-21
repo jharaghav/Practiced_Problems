@@ -1,4 +1,4 @@
-package com.example.demo.linkedList.circularSinglyLinkedList;
+package com.example.codingPractice.linkedList.circularSinglyLinkedList;
 
 public class CircularSinglyLinkedList {
     ListNode last;

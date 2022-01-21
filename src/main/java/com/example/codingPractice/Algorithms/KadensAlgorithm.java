@@ -1,4 +1,4 @@
-package com.example.demo.Algorithms;
+package com.example.codingPractice.Algorithms;
 
 public class KadensAlgorithm {
     public static void main(String... s){

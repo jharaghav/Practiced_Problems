@@ -1,7 +1,6 @@
-package com.example.demo.arrayProblem.arrayLogicalMedium;
+package com.example.codingPractice.arrayProblem.arrayLogicalMedium;
 
 import java.util.Arrays;
-import java.util.HashMap;
 
 //Given an array arr of size n and an integer X. Find if there's a triplet in the array which sums up to the given integer X.
 //

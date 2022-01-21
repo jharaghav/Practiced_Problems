@@ -1,4 +1,4 @@
-package com.example.demo.recurssion;
+package com.example.codingPractice.recurssion;
 
 public class PalindromeCheck {
     public  static void main(String... s)

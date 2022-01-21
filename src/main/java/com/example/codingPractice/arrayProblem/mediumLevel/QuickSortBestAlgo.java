@@ -1,4 +1,4 @@
-package com.example.demo.arrayProblem.mediumLevel;
+package com.example.codingPractice.arrayProblem.mediumLevel;
 
 
 //https://www.youtube.com/watch?v=UA_Rmjfj4bw

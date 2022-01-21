@@ -1,4 +1,4 @@
-package com.example.demo.arrayProblem;
+package com.example.codingPractice.arrayProblem;
 //Sliding window technique
 //Dynamic variant. Smallest subarray with given sum.
 public class MinSubArraySize {

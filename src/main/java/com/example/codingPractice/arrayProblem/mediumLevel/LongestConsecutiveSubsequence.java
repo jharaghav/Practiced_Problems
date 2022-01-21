@@ -1,6 +1,5 @@
-package com.example.demo.arrayProblem.mediumLevel;
+package com.example.codingPractice.arrayProblem.mediumLevel;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 //Input:

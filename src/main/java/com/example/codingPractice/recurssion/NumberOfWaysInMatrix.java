@@ -1,4 +1,4 @@
-package com.example.demo.recurssion;
+package com.example.codingPractice.recurssion;
 
 public class NumberOfWaysInMatrix {
     public static void main(String... str)

@@ -1,4 +1,4 @@
-package com.example.demo.arrayProblem.mediumLevel;
+package com.example.codingPractice.arrayProblem.mediumLevel;
 //Given an array Arr[] that contains N integers (may be positive, negative or zero). Find the product of the maximum product subarray.
 //
 //

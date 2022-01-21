@@ -1,4 +1,4 @@
-package com.example.demo.stack;
+package com.example.codingPractice.stack;
 
 import java.util.EmptyStackException;
 public class StackImplementationByLinkedList {

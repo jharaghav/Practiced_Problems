@@ -1,4 +1,4 @@
-package com.example.demo.arrayProblem.mediumLevel;
+package com.example.codingPractice.arrayProblem.mediumLevel;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.example.demo.linkedList.DoublyLinkedList;
+package com.example.codingPractice.linkedList.DoublyLinkedList;
 
 public class DoublyLinkedList {
 

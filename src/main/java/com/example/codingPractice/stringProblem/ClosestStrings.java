@@ -1,4 +1,4 @@
-package com.example.demo.stringProblem;
+package com.example.codingPractice.stringProblem;
 
 //Given a list of words followed by two words, the task to find the minimum distance between the given two words in the list of words
 //
