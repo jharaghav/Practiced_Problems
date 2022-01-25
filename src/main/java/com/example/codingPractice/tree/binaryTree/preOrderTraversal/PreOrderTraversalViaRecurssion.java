@@ -1,4 +1,4 @@
-package com.example.codingPractice.tree.binaryTree;
+package com.example.codingPractice.tree.binaryTree.preOrderTraversal;
 
 /**
  * Algorithm Preorder(tree)
@@ -6,7 +6,7 @@ package com.example.codingPractice.tree.binaryTree;
  *    2. Traverse the left subtree, i.e., call Preorder(left-subtree)
  *    3. Traverse the right subtree, i.e., call Preorder(right-subtree)
  */
-public class PreOrederTraversalViaRecurssion {
+public class PreOrderTraversalViaRecurssion {
 
     private TreeNode root;
 
@@ -21,22 +21,22 @@ public class PreOrederTraversalViaRecurssion {
     }
 
     public static void main(String... s){
-        PreOrederTraversalViaRecurssion binaryTree = new PreOrederTraversalViaRecurssion();
+        PreOrderTraversalViaRecurssion binaryTree = new PreOrderTraversalViaRecurssion();
         binaryTree.createBinaryTree();
         binaryTree.printBinaryTree();
     }
     public void createBinaryTree(){
-        TreeNode first = new TreeNode(10);
-        TreeNode second = new TreeNode(23);
-        TreeNode third = new TreeNode (11);
-        TreeNode fourth = new TreeNode(16);
-        TreeNode fifth = new TreeNode(20);
+        TreeNode first = new TreeNode(1);
+        TreeNode second = new TreeNode(2);
+        TreeNode third = new TreeNode (3);
+        TreeNode fourth = new TreeNode(4);
+        TreeNode fifth = new TreeNode(5);
 
         root= first;
         first.left= second;
         first.right = third;
         second.left = fourth;
-        third.left = fifth;
+        second.right = fifth;
     }
     private void printBinaryTree(){
         preOrderTraversal(root);
