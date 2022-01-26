@@ -1,12 +1,12 @@
 package designPatterns.Factory.SimpleFactoryPattern;
 
 public class FactoryOfSource {
-    IngestToDatabase sourceSystemObject=null;
+    IngestToDatabase ingestToDatabase = null;
     public IngestToDatabase getInstanceOfSource(String source){
-        if (source.equals("API"))  sourceSystemObject = new SourceDataFromAPI();
-        else if (source.equals("FILE"))  sourceSystemObject = new SourceDataFromFile();
-        else if (source.equals("DATALAKE"))  sourceSystemObject = new SourceDataFromDataLake();
-        else if(source.equals("DATABASE")) sourceSystemObject = new SourceFromDataBase();
-        return sourceSystemObject;
+        if (source.equals("API"))  ingestToDatabase = new SourceDataFromAPI();
+        else if (source.equals("FILE"))  ingestToDatabase = new SourceDataFromFile();
+        else if (source.equals("DATALAKE"))  ingestToDatabase = new SourceDataFromDataLake();
+        else if(source.equals("DATABASE")) ingestToDatabase = new SourceFromDataBase();
+        return ingestToDatabase;
     }
 }
