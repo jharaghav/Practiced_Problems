@@ -34,19 +34,27 @@ public class PostOrderTraversalViaIteration {
         second.left = fourth;
         second.right = fifth;
     }
-    //Using stack we can traverse the binary tree
+    //Using stack we can traverse the binary tree in iterative way
     private void printBinaryTree(){
        if(root == null)return;
        Stack<TreeNode> stack = new Stack<>();
-        TreeNode temp = root;
-        while(!stack.isEmpty() || temp != null){
-            if(temp != null){
-                stack.push(temp);
-                temp = temp.left;
+        TreeNode current = root;
+        while(current!=null || !stack.isEmpty()){
+            if(current != null){
+                stack.push(current);
+                current = current.left;
             }else{
-                temp = stack.pop();
-                System.out.print(temp.data+" --> ");
-                temp = temp.right;
+                TreeNode temp = stack.peek().right;
+                if(temp == null){
+                    temp = stack.pop();
+                    System.out.print(temp.data+" --> ");
+                    while(!stack.isEmpty() && temp == stack.peek().right){
+                        temp = stack.pop();
+                        System.out.print(temp.data+" ---> ");
+                    }
+                }else{
+                    current = temp;
+                }
             }
         }
     }
