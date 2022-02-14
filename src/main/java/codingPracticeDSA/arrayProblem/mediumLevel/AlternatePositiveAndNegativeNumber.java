@@ -13,6 +13,7 @@ import java.util.LinkedList;
 //        Arr[] = {9, 4, -2, -1, 5, 0, -5, -3, 2}
 //        Output:
 //        9 -2 4 -1 5 -5 0 -3 2
+// Here Time complexity O(N) space Complexity O(N)
 public class AlternatePositiveAndNegativeNumber {
 
     public static void main(String... s){

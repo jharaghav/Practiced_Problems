@@ -1,6 +1,8 @@
-package codingPracticeDSA.arrayProblem;
+package codingPracticeDSA.arrayProblem.slidingWindowProblem;
 //Sliding window technique
 //Dynamic variant. Smallest subarray with given sum.
+
+// IMP: Conclusion : Sliding Window Technique only for Non-Negative element array
 public class MinSubArraySize {
 
     public static void main(String... s){
