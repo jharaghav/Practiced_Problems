@@ -48,7 +48,7 @@ public class MinWidowSubString {
 
                         if (count > 0) break;
 
-                        startWindow++;
+                        startWindow = startWindow+1;
                     }
                     if((requiredLastIndex - requiredFirstIndex) >  (endWindow - startWindow)){
                         requiredFirstIndex = startWindow;
