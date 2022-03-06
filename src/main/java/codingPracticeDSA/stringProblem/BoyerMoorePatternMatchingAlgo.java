@@ -7,7 +7,7 @@ public class BoyerMoorePatternMatchingAlgo {
 
     public static void main(String... s){
         BoyerMoorePatternMatchingAlgo boyerMoorePatternMatchingAlgo = new BoyerMoorePatternMatchingAlgo();
-        System.out.println("First Matching Index : "+boyerMoorePatternMatchingAlgo.findStartMatchingIndex("asdraghdfdfdfRAGHAV","RAGHAV"));
+        System.out.println("First Matching Index : "+boyerMoorePatternMatchingAlgo.findStartMatchingIndex("asdraghavRAGHAVdfdfdfRAGHAV","RAGHAV"));
     }
 
     int findStartMatchingIndex(String target, String pattern){
@@ -25,10 +25,10 @@ public class BoyerMoorePatternMatchingAlgo {
                     i--;
                     patternLengthIndex-- ;
                 } else {
-                    if (map.containsKey(target.charAt(i))) {
+                    if (map.containsKey(target.charAt(i))) { //If we found the key in map, then shift the startIndex according to the Bad match table value
                         startIndex = (startIndex) + map.get(target.charAt(i));
                         break;
-                    } else {
+                    } else { //If we don't found the key in map, then shift the startIndex, according to "*" key in map
                         startIndex = (startIndex ) + map.get('*');
                         break;
                     }
@@ -43,17 +43,21 @@ public class BoyerMoorePatternMatchingAlgo {
         return -1;
     }
 
-
+    //Bad match table is for traversing the pattern in targer string
     HashMap<Character, Integer> badMatchTable(String pattern){
         HashMap<Character, Integer> map = new HashMap<>();
         //Formula for bad match table index valeu : (length - index - 1)
         int length = pattern.length();
         int i =0;
+        char ch = pattern.charAt(length-1); //Last character of pattern
+        map.put(ch,length);//last character value in given pattern as a key in map should be length of pattern in map, we will not override it's value
         while(i<pattern.length()){
             int value = (length - i - 1);
-            if(i < pattern.length()){
-                map.put(pattern.charAt(i++), value);
+            char c = pattern.charAt(i);
+            if(c != ch){ //Here we will not override the last pattern char key in map
+                map.put(c, value);
             }
+            i++;
         }
         if(i == pattern.length()){
             map.put('*',length);
