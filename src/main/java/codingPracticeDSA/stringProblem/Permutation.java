@@ -5,6 +5,15 @@ package codingPracticeDSA.stringProblem;
 
 //Auxiliary Space: O(r – l)
 //https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
+
+//Steps:
+//1: we will call the recurssive function, where we pass the given string, firstIndex, and last index such as (str, 0, length-1) as (s, l, r)
+//2: If l == r, we found the required permutated string, return it
+//3: in for loop, we will traverse the string, from l to r, swapping the left element to all of string indices,
+// then we will fix the first position and call the recurssive function, and then we will swap it back as backtracking
+//4: we will call these functions  s = swap(s,l,i);
+//            permute(s,l+1,r);
+//            s = swap(s,l,i); //backtrack
 public class Permutation {
 
     String givenString = "abc";
