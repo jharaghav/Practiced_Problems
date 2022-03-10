@@ -11,7 +11,8 @@ package codingPracticeDSA.stringProblem;
 //2: If l == r, we found the required permutated string, return it
 //3: in for loop, we will traverse the string, from l to r, swapping the left element to all of string indices,
 // then we will fix the first position and call the recurssive function, and then we will swap it back as backtracking
-//4: we will call these functions  s = swap(s,l,i);
+//4: we will call these functions inf for loop:
+//             s = swap(s,l,i);
 //            permute(s,l+1,r);
 //            s = swap(s,l,i); //backtrack
 public class Permutation {
