@@ -43,10 +43,10 @@ public class BoyerMoorePatternMatchingAlgo {
         return -1;
     }
 
-    //Bad match table is for traversing the pattern in targer string
+    //Bad match table is for traversing the pattern in target string
     HashMap<Character, Integer> badMatchTable(String pattern){
         HashMap<Character, Integer> map = new HashMap<>();
-        //Formula for bad match table index valeu : (length - index - 1)
+        //Formula for bad match table index value : (length - index - 1)
         int length = pattern.length();
         int i =0;
         char ch = pattern.charAt(length-1); //Last character of pattern
@@ -60,7 +60,8 @@ public class BoyerMoorePatternMatchingAlgo {
             i++;
         }
         if(i == pattern.length()){
-            map.put('*',length);
+            map.put('*',length); //we are putting the '*' as key with value as pattern length in the map,
+            // it will help where some char of target string not match with the pattern string
         }
         return map;
     }
