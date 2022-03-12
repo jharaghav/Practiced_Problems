@@ -17,8 +17,8 @@ public class BoyerMoorePatternMatchingAlgo {
 
         int endIndex = startIndex + pattern.length() -1;
         while(endIndex < target.length()){
-            int i = endIndex;
-            int patternLengthIndex = pattern.length()-1;
+            int i = endIndex; //this index is for the target (we will traverse from right to left)
+            int patternLengthIndex = pattern.length()-1; // this index is for the pattern
             while(i>startIndex && patternLengthIndex>0){
 
                 if(target.charAt(i) == pattern.charAt(patternLengthIndex)){
