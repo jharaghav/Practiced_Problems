@@ -10,9 +10,18 @@ public class MinOperationToConvert {
 
         int lcsLength = longestCommonSubsequence(s1, s2);
         System.out.println("lcsLength : "+lcsLength);
+        //Here LCS value is : "ea"
+
+        // How we can achieve "ea" from s1
+        //By deleting two character 'h' and 'p'
+
+        //How we can get "pea" from LCS string
+        //By inserting 'p' at first position
+
+        //Flow like this: [s1 ---Deletion---> lcs string ----Insertion----> s2]
 
         //Ans would be
-        // first for deletion : (s1.length() - lcsLength) : "ea"
+        // first for deletion : (s1.length() - lcsLength) : 'h' & 'p'
         // second for insertion : (s2.length() - lcsLength) : "p"
 
         int requiredMinOperation = (s1.length() - lcsLength) + (s2.length() - lcsLength);
